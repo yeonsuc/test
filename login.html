@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/style_compassion_user.css">
+</head>
+<body>
+    <div class="wrap_all login_all"> <!-- 230111 클래스추가 : login_all -->
+        
+        <!-- 컨텐츠 -->
+        <div class="container">
+            <div class="login_wrap">
+                <div class="login_bg"></div>
+                <div class="group_logininfo">
+                    <div class="login_text">
+                        <p class="title"><span>후원자님</span>, 반갑습니다!</p>
+                    </div>
+                    <div class="login_input">
+                        <label><span>I D</span><input type="text"></label>
+                        <label><span>PW</span><input type="password"></label>
+                        <button type="button" class="btn_blue"><span class="arrow_right">Login</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer id="footerCh">
+            <div class="policy-wrap">
+                <div class="inner">
+                    <a href="/etc/terms" class="type-essential">이용약관</a>
+                    <a href="/etc/privacy" class="type-essential">개인정보 처리방침</a>
+                    <a href="https://compassion.recruiter.co.kr" target="_blank">인재채용</a>
+                    <a href="/customer/faq" class="type-essential">FAQ</a>
+                    <a href="https://113366.com/compassion" target="_blank">원격지원</a>
+                    <div class="family-site-wrap">
+                        <div class="family-site">
+                            <button class="current">Compassion Worldwide</button>
+                            <ul>
+                                <li>
+                                    <a href="http://www.selfrance.org/" target="_blank" title="프랑스">프랑스</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.tearfund.org.nz/" target="_blank" title="뉴질랜드">뉴질랜드</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion-de.org/" target="_blank" title="독일">독일</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassionuk.org/" target="_blank" title="영국">영국</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.it/ita/" target="_blank" title="이탈리아">이탈리아</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.com.au/" target="_blank" title="호주">호주</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.ca/" target="_blank" title="캐나다">캐나다</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.com/" target="_blank" title="미국">미국</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.ch/" target="_blank" title="스위스">스위스</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.nl/" target="_blank" title="네덜란드">네덜란드</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.se/" target="_blank" title="노르덴">노르덴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner address-wrap">
+                <div class="footer-sns-wrap">
+                    <ul class="sns-list">
+                        <li>
+                            <a href="https://www.youtube.com/user/CompassionKR" target="_blank" title="youtube" class="ico-youtube">
+                                <span class="for-a11y">youtube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/compassionkorea/" target="_blank" title="instagram" class="ico-instagram">
+                                <span class="for-a11y">instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/compassion.Korea" target="_blank" title="facebook" class="ico-facebook">
+                                <span class="for-a11y">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/compassionkorea" target="_blank" title="naver blog" class="ico-naver-blog">
+                                <span class="for-a11y">naver blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pf.kakao.com/_YKgWxd" target="_blank" title="kakao channel" class="ico-kakao-channel">
+                                <span class="for-a11y">kakao channel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://m.post.naver.com/my.nhn?memberNo=41678725" target="_blank" class="ico-post">
+                                <span class="for-a11y">naver post</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://happylog.naver.com/compassion.do" target="_blank" title="happybean" class="ico-happybean">
+                                <span class="for-a11y">naver happybean</span>
+                            </a>
+                        </li>
+                    </ul>
+        
+                </div>
+        
+                <div class="footer-logo-wrap">
+                <p class="footer-logo">
+                  <a href="https://www.compassion.or.kr">
+                    <img src="./assets/images/logo_footer.png" alt="한국컴패션">
+                  </a>
+                </p>
+                </div>
+              <div class="address">
+                <button class="btn-more-info mobile_only" type="button">More</button>
+                <address>
+                  <strong class="cp-name" id="footer_company_name">한국컴패션</strong>
+                  <div>
+                    <p id="footer_address"><span>서울시 용산구 한남대로 102-5 (한남동 723-41)석전빌딩(04418)</span></p>
+                    <p>
+                      <span id="footer_bizNum">사업자등록번호:108-82-05789</span>
+                      <span id="footer_ceo">대표자:서정인</span>
+                    </p>
+                    <p>
+                      <span id="telNum">후원상담/안내:02-740-1000</span>
+                      <span>
+                        <a href="mailto:info@compassion.or.kr" class="mailto" id="footer_mail">이메일: info@compassion.or.kr</a>
+                      </span>
+                    </p>
+                  </div>
+                </address>
+                <div class="hosting">
+                  <p class="copyright" id="footer_copyright">ⓒ COMPASSION KOREA All Rights Reserved Contact us for more information</p>
+                </div>
+              </div>
+            </div>
+        </footer>
+   
+   
+    </div>
+
+<!-- 230111 스크립트 추가 -->
+<!-- <script>
+    $(function(){
+        // var winHeight
+        $(window).on('load',function(){
+            winHeight=$('html').height();
+            console.log(winHeight);
+
+        })
+    })
+</script> -->
+
+
+
+<!-- datepicker -->
+<script src="./assets/js/datepicker-ko.js"></script> 
+<script>
+    $( function() {
+    var dateFormat = "yy-mm-dd",
+      from = $( "#date_from" )
+        .datepicker({
+            dateFormat: 'yy-mm-dd',
+            defaultDate: "+1w",
+            changeMonth: true,
+            changeYear: true,
+        })
+        .on( "change", function() {
+            to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( "#date_to" ).datepicker({
+            dateFormat: 'yy-mm-dd', 
+            defaultDate: "+1w",
+            changeMonth: true,
+            changeYear: true,
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
+</script>  
+
+
+<!-- 헤더 메뉴 열기/닫기  -->
+<script>
+    $(function(){
+        $('.btn_menu').on('click',function(){
+            $('.header_menu_wrap').addClass('open');
+        })
+        $('.header_menu_content .btn_close_menu').on('click',function(){
+            $('.header_menu_wrap').removeClass('open');
+        })
+    })
+</script>
+<!-- 푸터 더보기 클릭 -->
+<script>
+    $(function(){
+        $('.address .btn-more-info').on('click',function(){ 
+            $('address').toggleClass('is-active');
+        });
+    })
+</script>
+
+<!-- 패밀리사이트 클릭 -->
+<script>
+    $(function(){
+        $('.family-site-wrap .current').on('click',function(){
+            $(this).toggleClass('open');
+        });
+    })
+</script>
+
+</body>
+</html>

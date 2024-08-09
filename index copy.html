@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+
+    <style>
+        .wrap{
+            display: table;
+            border-top: 1px solid #000;
+        }
+        body,html{font-size: 13px;}
+        .list{
+            border: 1px solid #000;
+            border-right: none;
+            border-top: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .list:hover{
+            background-color: #eee;
+        }
+        .list li{
+            border-right: 1px solid #000;
+            padding: 10px;
+        }
+        .list.no-hover:hover{background-color: #fff;}
+        .page{width: 80px;}
+        .name{width: 230px;}
+        .location{width: 330px;}
+        .filename{width: 230px;}
+        .pc{width: 40px;}
+        .mo{width: 40px;}
+        .etc{width: 330px;}
+        .center{display: flex;align-items: center;justify-content: center;}
+        .red{color: red;}
+    </style>
+</head>
+<body>
+    <h1>컴패션 사용자 페이지 Index</h1>
+
+    <div class="wrap">
+        <ul class="list no-hover">
+            <li class="page center"><strong>page No.<br>pc</strong></li>
+            <li class="page center"><strong>page No.<br>mobile</strong></li>
+            <li class="name center"><strong>화면명</strong></li>
+            <li class="location center"><strong>Location</strong></li>
+            <li class="filename center"><strong>파일명</strong></li>
+            <li class="pc center"><strong>pc</strong></li>
+            <li class="mo center"><strong>mobile</strong></li>
+            <li class="etc center"><strong>비고</strong></li>
+        </ul>
+        <ul class="list">
+            <li class="page center">4</li>
+            <li class="page center">19</li>
+            <li class="name">로그인</li>
+            <li class="location">로그인</li>
+            <li class="filename"><a href="./login.html" target="_blank">login.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc"></li>
+        </ul>
+        <ul class="list">
+            <li class="page center">5</li>
+            <li class="page center">20</li>
+            <li class="name">홈</li>
+            <li class="location">홈</li>
+            <li class="filename"><a href="./home.html" target="_blank">home.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">메인배너 - 이미지</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">5</li>
+            <li class="page center">20</li>
+            <li class="name">홈</li>
+            <li class="location">홈</li>
+            <li class="filename"><a href="./home_youtube.html" target="_blank">home_youtube.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">메인배너 - 유튜브 영상의 경우</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">6~7</li>
+            <li class="page center">21~22</li>
+            <li class="name">후원어린이</li>
+            <li class="location">홈 > 후원어린이</li>
+            <li class="filename"><a href="./children_list_list.html" target="_blank">children_list_list.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">어린이정보 - 리스트형</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">8</li>
+            <li class="page center">-</li>
+            <li class="name">후원어린이</li>
+            <li class="location">홈 > 후원어린이</li>
+            <li class="filename"><a href="./children_list_card.html" target="_blank">children_list_card.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">X</li>
+            <li class="etc">어린이정보 - 카드형 / 모바일은 카드형을 제공하지 않음</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">9</li>
+            <li class="page center">23~24</li>
+            <li class="name">후원어린이 목록</li>
+            <li class="location">홈 > 후원어린이 > 국가별 후원어린이 목록</li>
+            <li class="filename"><a href="./children_list_nation_list.html" target="_blank">children_list_nation_list.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">어린이정보 - 리스트형</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">10</li>
+            <li class="page center">-</li>
+            <li class="name">후원어린이 목록</li>
+            <li class="location">홈 > 후원어린이 > 국가별 후원어린이 목록</li>
+            <li class="filename"><a href="./children_list_nation_card.html" target="_blank">children_list_nation_card.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">X</li>
+            <li class="etc">어린이정보 - 카드형 / 모바일은 카드형을 제공하지 않음</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">11</li>
+            <li class="page center">25</li>
+            <li class="name">후원어린이별 편지함 목록 팝업</li>
+            <li class="location">홈 > 후원어린이 > 후원어린이별 편지함 레이어 팝업 </li>
+            <li class="filename"><a href="./children_popup_letter_list.html" target="_blank">children_popup_letter_list.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">아코디언 스크립트 포함</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">12</li>
+            <li class="page center">26</li>
+            <li class="name">편지상세내용 레이어 팝업</li>
+            <li class="location">홈 > 후원어린이 > 후원어린이별 편지함 레이어 팝업 > 편지상세내용 레이어팝업 </li>
+            <li class="filename"><a href="./children_popup_letter_detail.html" target="_blank">children_popup_letter_detail.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">이미지 슬라이드 스크립트 포함</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">13~14</li>
+            <li class="page center">27~28</li>
+            <li class="name">후원어린이 상세 정보 레이어 팝업</li>
+            <li class="location">홈 > 후원어린이 > 후원어린이 상세 정보 레이어 팝업 </li>
+            <li class="filename"><a href="./children_popup_child_info.html" target="_blank">children_popup_child_info.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">어린이정보/국가정보 탭 클릭 이벤트 스크립트 포함<br>지도영역은 영역만 표시해 둠</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">15</li>
+            <li class="page center">29</li>
+            <li class="name">후원어린이 성장앨범 레이어팝업</li>
+            <li class="location">홈 > 후원어린이 > 후원어린이 성장앨범 레이어팝업 </li>
+            <li class="filename"><a href="./children_popup_album.html" target="_blank">children_popup_album.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">슬라이드 스크립트 포함 <br> 모바일 팝업 타이틀 PC 기준으로 작성(성장앨범) </li>
+        </ul>
+
+        <ul class="list">
+            <li class="page center">16</li>
+            <li class="page center">30</li>
+            <li class="name">어린이 변동 현황</li>
+            <li class="location">홈 > 어린이 변동 현황</li>
+            <li class="filename"><a href="./status_change.html" target="_blank">status_change.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc">datepicker 스크립트 포함</li>
+        </ul>
+        <ul class="list">
+            <li class="page center">17</li>
+            <li class="page center">31</li>
+            <li class="name">양육보완 후원 현황</li>
+            <li class="location">홈 > 양육보완 후원 현황</li>
+            <li class="filename"><a href="./status_support.html" target="_blank">status_support.html</a></li>
+            <li class="pc center">O</li>
+            <li class="mo center">O</li>
+            <li class="etc"></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

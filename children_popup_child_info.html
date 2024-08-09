@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후원 어린이 목록</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/style_compassion_user.css">
+</head>
+<body style="overflow: hidden;"> <!-- 팝업 호출 시 style 추가 -->
+    <div class="wrap_all">
+        <!-- 헤더 -->
+        <div class="header_wrap">
+            <div class="header">
+                <h1 class="logo_content"><img src="./assets/images/logo_content_user.png" alt=""></h1>
+                <button type="button" class="btn_menu mobile_only">메뉴열기</button>
+                <div class="header_menu_wrap">
+                    <div class="header_menu_content">
+                        <button type="button" class="btn_close_menu mobile_only">닫기</button>
+                        <ul class="header_menu">
+                            <li><a href="#">홈</a></li>
+                            <li class="current"><a href="#">후원 어린이</a></li>
+                            <li><a href="#">어린이 변동 현황</a></li>
+                            <li><a href="#">양육보완 후원 현황</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 컨텐츠 -->
+        <div class="container">
+            <div class="content">
+                <div class="location">
+                    <ul>
+                        <li>홈</li>
+                        <li>후원어린이</li>
+                        <li>국가별 후원어린이 목록</li>
+                    </ul>
+                </div>
+
+                <h2>후원 어린이 목록</h2>
+
+                <div class="section_children_nation">
+                    <div class="child_nation_select">
+                        <select name="" id="">
+                            <option value="" disabled selected hidden>국가</option>
+                            <option value="">브라질</option>
+                        </select>
+                    </div>
+
+                    <div class="nation_detail">
+                        <p class="title">
+                            <img src="./assets/images/flag/flag_america_Brazil.png" alt="">
+                            <strong>브라질</strong>
+                            <span>BRAZIL</span>
+                        </p>
+                        <p class="text">브라질 정부는 어린이들을 위한 시설을 확충하였고​ 부모님들은 7~14세의 어린이들을 공립학교에 보낼 수 있게 되었습니다.​ 하지만 이 같은 발전에도 불구하고 브라질 교육 시스템은​ 아직 나아가야 할 길이 남아있습니다.​ 제대로 훈련받지 못한 선생님들이 많아 어린이들은 읽기, 쓰기 및 수학 등​ 기초적인 것을 다 익히지 못한 채 학교를 떠나기도 합니다.</p>
+                        <div class="img">
+                            <img src="./assets/images/nation_img_brazil.png" alt="">
+                        </div>
+                    </div>
+
+                    <h3 class="title_line"><span>국가정보</span></h3>
+
+                    <div class="nation_info">
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_city.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>수도</dt>
+                                <dd>브라질리아 Brasilia</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_people.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>인구</dt>
+                                <dd>4천만</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_water.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>식수 공급</dt>
+                                <dd>도시 95.5%, 지방 75.8%</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_clean.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>위생 공급</dt>
+                                <dd>19.1%</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_weight.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>5세 미만 저체중</dt>
+                                <dd>10.4%</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_literacy.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>문해율</dt>
+                                <dd>남성 85.3%, 여성 71.5%</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_income.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>하루 1.9$ 미만으로 살아가는 비율</dt>
+                                <dd>21.4%</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./assets/images/icon_nation_health.jpg" alt="">
+                            </div>
+                            <dl>
+                                <dt>공중위생시설 사용</dt>
+                                <dd>74% (2017년)</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="summary_detail">
+                        <div class="box_shadow">
+                            <div class="img">
+                                <img src="./assets/images/bg_start.jpg" alt="">
+                            </div>
+                            <p class="title">컴패션 시작</p>
+                            <p class="text"><strong>1982</strong>년</p>
+                        </div>
+                        <div class="box_shadow">
+                            <div class="img">
+                                <img src="./assets/images/bg_record.jpg" alt="">
+                            </div>
+                            <p class="title">컴패션 등록 어린이 수</p>
+                            <p class="text"><strong>155,000</strong>명 이상</p>
+                        </div>
+                        <div class="box_shadow">
+                            <div class="img">
+                                <img src="./assets/images/bg_record.jpg" alt="">
+                            </div>
+                            <p class="title">컴패션 어린이 센터 수</p>
+                            <p class="text"><strong>450</strong>개</p>
+                        </div>
+                        <div class="box_shadow">
+                            <div class="img">
+                                <img src="./assets/images/bg_atomi.png" alt="">
+                            </div>
+                            <p class="title">애터미 후원 어린이 수</p>
+                            <p class="text"><strong>100</strong>명</p>
+                        </div>
+                    </div>
+
+                    <h3 class="title_line"><span>후원어린이 목록</span></h3>
+
+                    <div class="group_child_list">
+                        <div class="child_search">
+                            <div class="child_search_item">
+                                <input type="text" name="" id="" class="input_search" placeholder="search">
+                                <select name="" id="">
+                                    <option value="" disabled="" selected="" hidden="">Sort by</option>
+                                    <option value="">나이 순</option>
+                                    <option value="">최근 후원 순</option>
+                                    <option value="">후원 시작 순</option>
+                                    <option value="">이름 순</option>
+                                </select>
+                            </div>
+
+                            <div class="group_btn">
+                                <button type="button" class="btn_sort_list">리스트형</button> <!-- 선택 시 current 클래스 추가 -->
+                                <button type="button" class="btn_sort_card current">카드형</button>
+                            </div>
+                        </div>
+
+                        <div class="child_type_card">
+                            <!-- 리스트 내용 반복 -->
+                            <div class="box_shadow">
+                                <div class="img">
+                                    <img src="./assets/images/temp/img_child_personal.png" alt="">
+                                </div>
+                                <ul class="chlid_info">
+                                    <li class="name"><span>조엘</span> (BF060600489)</li>
+                                    <li class="nation"><img src="./assets/images/flag/flag_america_Brazil.png" alt=""><span>브라질</span></li>
+                                    <li class="gender">남자</li>
+                                    <li class="birth">2014년 1월 30일생 (12세)</li>
+                                    <li class="date">후원 시작일<span>2022년 9월 30일</span></li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="#" class="btn_line">상세보기</a>
+                                    <a href="#" class="btn_line">성장앨범</a>
+                                    <a href="#" class="btn_line">편지함</a>
+                                </div>
+                            </div>
+                            <!-- // 리스트 내용 반복 -->
+
+                            <div class="box_shadow">
+                                <div class="img">
+                                    <img src="./assets/images/temp/img_child_personal.png" alt="">
+                                </div>
+                                <ul class="chlid_info">
+                                    <li class="name"><span>조엘</span> (BF060600489)</li>
+                                    <li class="nation"><img src="./assets/images/flag/flag_america_Brazil.png" alt=""><span>브라질</span></li>
+                                    <li class="gender">남자</li>
+                                    <li class="birth">2014년 1월 30일생 (12세)</li>
+                                    <li class="date">후원 시작일<span>2022년 9월 30일</span></li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="#" class="btn_line">상세보기</a>
+                                    <a href="#" class="btn_line">성장앨범</a>
+                                    <a href="#" class="btn_line">편지함</a>
+                                </div>
+                            </div>
+                            <div class="box_shadow">
+                                <div class="img">
+                                    <img src="./assets/images/temp/img_child_personal.png" alt="">
+                                </div>
+                                <ul class="chlid_info">
+                                    <li class="name"><span>조엘</span> (BF060600489)</li>
+                                    <li class="nation"><img src="./assets/images/flag/flag_america_Brazil.png" alt=""><span>브라질</span></li>
+                                    <li class="gender">남자</li>
+                                    <li class="birth">2014년 1월 30일생 (12세)</li>
+                                    <li class="date">후원 시작일<span>2022년 9월 30일</span></li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="#" class="btn_line">상세보기</a>
+                                    <a href="#" class="btn_line">성장앨범</a>
+                                    <a href="#" class="btn_line">편지함</a>
+                                </div>
+                            </div>
+                            <div class="box_shadow">
+                                <div class="img">
+                                    <img src="./assets/images/temp/img_child_personal.png" alt="">
+                                </div>
+                                <ul class="chlid_info">
+                                    <li class="name"><span>조엘</span> (BF060600489)</li>
+                                    <li class="nation"><img src="./assets/images/flag/flag_america_Brazil.png" alt=""><span>브라질</span></li>
+                                    <li class="gender">남자</li>
+                                    <li class="birth">2014년 1월 30일생 (12세)</li>
+                                    <li class="date">후원 시작일<span>2022년 9월 30일</span></li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="#" class="btn_line">상세보기</a>
+                                    <a href="#" class="btn_line">성장앨범</a>
+                                    <a href="#" class="btn_line">편지함</a>
+                                </div>
+                            </div>
+                            <div class="box_shadow">
+                                <div class="img">
+                                    <img src="./assets/images/temp/img_child_personal.png" alt="">
+                                </div>
+                                <ul class="chlid_info">
+                                    <li class="name"><span>조엘</span> (BF060600489)</li>
+                                    <li class="nation"><img src="./assets/images/flag/flag_america_Brazil.png" alt=""><span>브라질</span></li>
+                                    <li class="gender">남자</li>
+                                    <li class="birth">2014년 1월 30일생 (12세)</li>
+                                    <li class="date">후원 시작일<span>2022년 9월 30일</span></li>
+                                </ul>
+                                <div class="group_btn">
+                                    <a href="#" class="btn_line">상세보기</a>
+                                    <a href="#" class="btn_line">성장앨범</a>
+                                    <a href="#" class="btn_line">편지함</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="pagination">
+                            <button type="button" class="btn_prev">이전</button>
+                            <ul>
+                                <li class="current"><button type="button">1</button></li>
+                                <li><button type="button">2</button></li>
+                                <li><button type="button">3</button></li>
+                                <li><button type="button">4</button></li>
+                                <li><button type="button">5</button></li>
+                                <li><button type="button">6</button></li>
+                                <li><button type="button">7</button></li>
+                                <li><button type="button">8</button></li>
+                                <li><button type="button">9</button></li>
+                                <li><button type="button">10</button></li>
+                            </ul>
+                            <button type="button" class="btn_next">다음</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>  
+        </div>
+
+        <!-- 푸터 -->
+        <footer id="footerCh">
+            <div class="policy-wrap">
+                <div class="inner">
+                    <a href="/etc/terms" class="type-essential">이용약관</a>
+                    <a href="/etc/privacy" class="type-essential">개인정보 처리방침</a>
+                    <a href="https://compassion.recruiter.co.kr" target="_blank">인재채용</a>
+                    <a href="/customer/faq" class="type-essential">FAQ</a>
+                    <a href="https://113366.com/compassion" target="_blank">원격지원</a>
+                    <div class="family-site-wrap">
+                        <div class="family-site">
+                            <button class="current">Compassion Worldwide</button>
+                            <ul>
+                                <li>
+                                    <a href="http://www.selfrance.org/" target="_blank" title="프랑스">프랑스</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.tearfund.org.nz/" target="_blank" title="뉴질랜드">뉴질랜드</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion-de.org/" target="_blank" title="독일">독일</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassionuk.org/" target="_blank" title="영국">영국</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.it/ita/" target="_blank" title="이탈리아">이탈리아</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.com.au/" target="_blank" title="호주">호주</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.ca/" target="_blank" title="캐나다">캐나다</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.com/" target="_blank" title="미국">미국</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.ch/" target="_blank" title="스위스">스위스</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.compassion.nl/" target="_blank" title="네덜란드">네덜란드</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.compassion.se/" target="_blank" title="노르덴">노르덴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner address-wrap">
+                <div class="footer-sns-wrap">
+                    <ul class="sns-list">
+                        <li>
+                            <a href="https://www.youtube.com/user/CompassionKR" target="_blank" title="youtube" class="ico-youtube">
+                                <span class="for-a11y">youtube</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/compassionkorea/" target="_blank" title="instagram" class="ico-instagram">
+                                <span class="for-a11y">instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/compassion.Korea" target="_blank" title="facebook" class="ico-facebook">
+                                <span class="for-a11y">facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://blog.naver.com/compassionkorea" target="_blank" title="naver blog" class="ico-naver-blog">
+                                <span class="for-a11y">naver blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pf.kakao.com/_YKgWxd" target="_blank" title="kakao channel" class="ico-kakao-channel">
+                                <span class="for-a11y">kakao channel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://m.post.naver.com/my.nhn?memberNo=41678725" target="_blank" class="ico-post">
+                                <span class="for-a11y">naver post</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://happylog.naver.com/compassion.do" target="_blank" title="happybean" class="ico-happybean">
+                                <span class="for-a11y">naver happybean</span>
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <button class="footer-newsletter" type="button" onclick="newsletterPop();">
+                        뉴스레터 구독
+                    </button>
+                </div>
+        
+                <div class="footer-logo-wrap">
+                <p class="footer-logo">
+                  <a href="https://www.compassion.or.kr">
+                    <img src="./assets/images/logo_footer.png" alt="한국컴패션">
+                  </a>
+                </p>
+                </div>
+              <div class="address">
+                <button class="btn-more-info mobile_only" type="button">More</button>
+                <address>
+                  <strong class="cp-name" id="footer_company_name">한국컴패션</strong>
+                  <div>
+                    <p id="footer_address"><span>서울시 용산구 한남대로 102-5 (한남동 723-41)석전빌딩(04418)</span></p>
+                    <p>
+                      <span id="footer_bizNum">사업자등록번호:108-82-05789</span>
+                      <span id="footer_ceo">대표자:서정인</span>
+                    </p>
+                    <p>
+                      <span id="telNum">후원상담/안내:02-740-1000</span>
+                      <span>
+                        <a href="mailto:info@compassion.or.kr" class="mailto" id="footer_mail">이메일: info@compassion.or.kr</a>
+                      </span>
+                    </p>
+                  </div>
+                </address>
+                <div class="hosting">
+                  <p class="copyright" id="footer_copyright">ⓒ COMPASSION KOREA All Rights Reserved Contact us for more information</p>
+                </div>
+              </div>
+            </div>
+        </footer>
+   
+        <!-- 팝업 -->
+        <div class="popup_wrap">
+            <div class="popup">
+                <div class="popup_header">
+                    <button type="button" class="btn_close">닫기</button>
+
+                    <p class="title"><i class="icon_person"></i><strong>어린이 정보</strong></p>
+                </div>
+                <div class="popup_content">
+                    <div class="child_info_wrap">
+                        <div class="child_info_main">
+                            <div class="img">
+                                <img src="./assets/images/temp/img_child_personal_2.jpg" alt="어린이 사진">
+                            </div>
+                            <div class="child_info">
+                                <p class="name">자펫</p>
+                                <ul>
+                                    <li><i class="icon_person_id"></i>어린이 번호: <strong>TZ098500252</strong></li>
+                                    <li><i class="icon_person_intro"></i><strong>탄자니아</strong>에 사는 <strong>8살 남자</strong>어린이예요.</li>
+                                    <li><i class="icon_person_birth"></i><strong>2014년 07월 19일</strong>에 태어났어요.</li>
+                                    <li><i class="icon_person_like"></i>저는 <strong>공 놀이, 뛰기, 운동</strong>을(를) 좋아해요.</li>
+                                    <li><i class="icon_person_home"></i>저는 <strong>어머니, 2명의 남자형제</strong>와(과) 함께 살아요. </li>
+                                </ul>
+                                <div class="group_popup_btn">
+                                    <a href="#" class="btn_blue">성장앨범</a>
+                                    <a href="#" class="btn_blue">편지함</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section_tab">
+                            <ul class="section_tab_list">
+                                <li class="current"><button type="button">어린이 정보</button></li>
+                                <li><button type="button">국가정보</button></li>
+                            </ul>
+                            <div class="section_tab_content">
+                                <!-- 어린이 정보 -->
+                                <div class="child_tab_childinfo current">
+                                    <div class="child_intro_text">
+                                        <p>저희 가족은요 아버지, 어머니, 여자형제가 있어요.</p>
+                                        <p>저는 집에서 가족과 함께 심부름을 해요.</p>
+                                        <p>제가 참여하는 컴패션 활동은요 주일학교예요.</p>
+                                        <p>제가 좋아하는 것은 인형놀이예요.</p>
+                                        <p>저는 아직 학교에 다니지 않아요.</p>
+                                    </div>
+                                    
+                                    <p class="title_pop_sub"><span>자펫</span>이(가) 다니는 <span>"마사 데판 체라 어린이센터"</span></p>
+                                    <div class="section_center_summary">
+                                        <div class="img">
+                                            <img src="./assets/images/img_pop_children_info_tab_00.png" alt="">
+                                        </div>
+                                        <div class="box_shadow">
+                                            <dl class="explain_type_box">
+                                                <dt>어린이센터 기본정보</dt>
+                                                <dd>
+                                                    <ul>
+                                                        <li>어린이센터 번호 :TG0931 </li>
+                                                        <li>시설 : 교실, 사무실, 사택, 놀이터, 주일학교 교실, 예배당 </li>
+                                                        <li>등록 어린이 수 : 218명</li>
+                                                    </ul>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <p class="title_pop_sub"><span>"마사 데판 체라 어린이센터"</span>의 활동</p>
+                                    <div class="section_center_action">
+                                        <div>
+                                            <div class="img">
+                                                <img src="./assets/images/img_pop_children_info_tab_01.png" alt="">
+                                            </div>
+                                            <div class="box_shadow">
+                                                <dl class="explain_type_box">
+                                                    <dt><i class="icon_school"></i>지적 영역</dt>
+                                                    <dd>
+                                                        <ul class="list_dot">
+                                                            <li>기초 생활기술 교육</li>
+                                                            <li>멘토링</li>
+                                                            <li>연령별 보충수업</li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img">
+                                                <img src="./assets/images/img_pop_children_info_tab_02.png" alt="">
+                                            </div>
+                                            <div class="box_shadow">
+                                                <dl class="explain_type_box">
+                                                    <dt><i class="icon_tool"></i>사회 정서적 영역</dt>
+                                                    <dd>
+                                                        <ul class="list_dot">
+                                                            <li>연극</li>
+                                                            <li>음악</li>
+                                                            <li>지역사회봉사</li>
+                                                        </ul>
+                                                        <ul class="list_dot">
+                                                            <li>게임(축구시합)</li>
+                                                            <li>성장캠프</li>
+                                                            <li>재능개발</li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img">
+                                                <img src="./assets/images/img_pop_children_info_tab_03.png" alt="">
+                                            </div>
+                                            <div class="box_shadow">
+                                                <dl class="explain_type_box">
+                                                    <dt><i class="icon_care"></i>영적 영역</dt>
+                                                    <dd>
+                                                        <ul class="list_dot">
+                                                            <li>성극</li>
+                                                            <li>성경구절 암송</li>
+                                                            <li>주일학교</li>
+                                                        </ul>
+                                                        <ul class="list_dot">
+                                                            <li>성경공부</li>
+                                                            <li>캠프</li>
+                                                            <li>소풍</li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="img">
+                                                <img src="./assets/images/img_pop_children_info_tab_04.png" alt="">
+                                            </div>
+                                            <div class="box_shadow">
+                                                <dl class="explain_type_box">
+                                                    <dt><i class="icon_bible"></i>신체적 영역</dt>
+                                                    <dd>
+                                                        <ul class="list_dot">
+                                                            <li>건강검진 </li>
+                                                            <li>운동회</li>
+                                                            <li>건강키트 배부</li>
+                                                        </ul>
+                                                        <ul class="list_dot">
+                                                            <li>병원 진료</li>
+                                                            <li>영양보충</li>
+                                                            <li>예방접종</li>
+                                                        </ul>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sectioin_accordion open">
+                                        <div class="title">어린이센터가 있는 <strong>Kebo toe(케보 토)</strong> 지역정보 <button type="button" class="btn_accordion js_accordion"><span>열기/닫기</span></button></div>
+                                        <div class="accordion_content">  
+                                            <div>
+                                                <ul class="list_dot">
+                                                    <li>지역이름 : Kebo toe (케보 토)</li>
+                                                    <li>가장 가까운 도시 : Agou Gare (아구 갸흐)</li>
+                                                    <li>인구 : 4000명</li>
+                                                    <li>언어 : Ewe</li>
+                                                    <li>기후 : 습함</li>
+                                                    <li>지형 : 산악지역</li>
+                                                    <li>주요 음식 : 바나나, 콩, 옥수수, 카사바, 곡물, 엔셋(바나나류), 생선, 염소고기, 플랜틴(바나나류), 쌀</li>
+                                                    <li>주요 직업 : 생계농</li>
+                                                    <li>실업률 : 70.00</li>
+                                                    <li>
+                                                        집구조
+                                                        <div>
+                                                            - 지붕 : 양철/골함석 
+                                                       	    <br>- 바닥 : 흙
+                                                       	    <br>- 벽 : 흙
+                                                        </div>
+                                                    </li>
+                                                    <li>공공시설 : 전화시설, 식수</li>
+                                                </ul>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // 어린이 정보 -->
+
+                                <!-- 국가정보 -->
+                                <div class="section_tab_nation">
+                                    <p class="title_pop_sub">토고(Togo)</p>
+                                    <div class="box_shadow graph">
+                                        <img src="./assets/images/temp/graph.png" alt="">
+                                    </div>
+                                    <div class="child_nation_info">
+                                        <div class="info_map box_shadow">
+                                            <!-- 지도영역 -->
+                                        </div>
+
+                                        <div class="info_weather box_shadow">
+                                            <p class="info_weather_time">지금 <span>PM 2:10</span><br><span>토고</span>은(는)요,</p>
+                                            <div class="info_weather_img"><img src="./assets/images/icon_weatherc_cloud.png" alt="Clouds"></div>
+                                            <p class="info_weather_current"><span class="info_weather_status">Clouds</span> <span class="info_weather_temperature">29˚C</span> </p>
+                                        </div>
+                                    </div>
+
+                                    <p class="title_pop_sub">토고 컴패션 소식</p>
+                                    <div class="info_nation_news">
+                                        <a href="#">
+                                            <img src="./assets/images/temp/nation_news.png" alt="">
+                                            <span class="text">음악으로 키워요! 배우는 힘</span>
+                                        </a>
+
+                                        <a href="#">
+                                            <img src="./assets/images/temp/nation_news.png" alt="">
+                                            <span class="text">음악으로 키워요! 배우는 힘</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- // 국가정보 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- 아코디언 스크립트 -->
+<script>
+    $(function(){
+        $('.js_accordion').on('click',function(){
+            $(this).parents('.sectioin_accordion').toggleClass('open');
+        })
+    })
+</script>
+
+<!-- 탭 클릭 액션 -->
+<script>
+    $(function(){
+        $('.section_tab_list button').on('click',function(){
+            var tabClickIndex = $(this).parents('li').index();
+            $(this).closest('li').addClass('current').siblings().removeClass('current');
+            $(this).closest('.section_tab').find('.section_tab_content > div').eq(tabClickIndex).addClass('current').siblings().removeClass('current');
+        });
+    })
+</script>
+
+<!-- 패밀리사이트 클릭 -->
+<script>
+    $(function(){
+        $('.family-site-wrap .current').on('click',function(){
+            $(this).toggleClass('open');
+        });
+    })
+</script>
+
+</body>
+</html>
